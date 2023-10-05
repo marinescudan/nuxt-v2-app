@@ -6,4 +6,9 @@ describe('Index', () => {
     const wrapper = mount(Index)
     expect(wrapper.vm).toBeTruthy()
   })
+
+  test('snapshot', () => {
+    const wrapper = mount(Index)
+    expect(wrapper.element).toMatchSnapshot()
+  })
 })

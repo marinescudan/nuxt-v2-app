@@ -1,25 +1,30 @@
 <template>
-    <div class="default-layout">
-        <nuxt />
-    </div>
-  </template>
+  <div class="default-layout">
+    <AppHeader />
+    <nuxt />
+  </div>
+</template>
   
-  <script>
-  export default {
-    components: {  },
-    head() {
-      return {
-        title: 'Blank layout',
-      }
-    },
-    computed: {},
-  }
-  </script>
+<script>
+import AppHeader from '~/components/shell/app-header/AppHeader.vue'
+export default {
+  components: {
+    AppHeader,
+  },
+  head() {
+    return {
+      title: 'Blank layout',
+    }
+  },
+  computed: {},
+}
+</script>
   
-  <style>
-
-  @media print {
-
-  }
-  </style>
+<style>
+.default-layout {
+    margin-top: 40px;
+    padding: 2rem;
+}
+@media print {}
+</style>
   
