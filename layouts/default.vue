@@ -1,7 +1,9 @@
 <template>
   <div class="default-layout">
     <AppHeader />
-    <nuxt />
+    <cv-content id="#main-content">
+      <nuxt />
+    </cv-content>
   </div>
 </template>
   
@@ -22,9 +24,10 @@ export default {
   
 <style>
 .default-layout {
-    margin-top: 40px;
-    padding: 2rem;
+  margin-top: 40px;
+  padding: 2rem;
 }
+
 @media print {}
 </style>
   

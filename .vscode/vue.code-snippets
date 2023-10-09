@@ -1,0 +1,77 @@
+{
+	// Place your nuxt-v2-app workspace snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"scope": "javascript,typescript",
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	"Vue_Component": {
+		"prefix": "template",
+		"body": [
+		  "<template>",
+		  "\t$0",
+		  "</template>",
+		  "",
+		  "<script>",
+		  "export default {",
+		  "\tname: '${TM_FILENAME/[\\.]vue//}'",
+		  "};",
+		  "</script>",
+		  "",
+		  "<style lang=\"scss\">",
+		  "</style>",
+		  ""
+		],
+		"description": "Single file template"
+	  },
+	  "Vuex_Module": {
+		"prefix": "vuex",
+		"body": [
+		  "export const state = () => ({",
+		  "\t$0",
+		  "});",
+		  "",
+		  "export const mutations = {",
+		  "\t$0",
+		  "};",
+		  "",
+		  "export const actions = {",
+		  "\t$0",
+		  "};",
+		  "",
+		  "export const getters = {",
+		  "\t$0",
+		  "};"
+		],
+		"description": "Vuex module"
+	  },
+	  "Nuxt_Layout": {
+		"prefix": "layout",
+		"body": [
+		  "<template>",
+		  "\t$0",
+		  "</template>",
+		  "",
+		  "<script>",
+		  "export default {",
+		  "\tname: '${TM_FILENAME/[\\.]vue//}'",
+		  "};",
+		  "</script>",
+		  "",
+		  "<style lang=\"scss\">",
+		  "</style>",
+		  ""
+		],
+		"description": "Nuxt layout"
+	  },
+}

@@ -5,6 +5,8 @@
         <cv-header-nav>
             <cv-header-menu-item :to="'/'">Home</cv-header-menu-item>
             <cv-header-menu-item :to="'/todo'">Todo</cv-header-menu-item>
+            <cv-header-menu-item :to="'/repos'">Repos</cv-header-menu-item>
+            <cv-header-menu-item :to="'/landing'">Landing</cv-header-menu-item>
         </cv-header-nav>
     </cv-header>
 </template>

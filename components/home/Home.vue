@@ -1,6 +1,9 @@
 <template>
     <div class="home-component">
-        <p>Home</p>
+        <figure>
+            <img src="~/assets/images/todo-banner.png" alt="todo logo">
+        </figure>
+        <p>The Vue tests todo</p>
     </div>
 </template>
 
